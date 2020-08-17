@@ -1,16 +1,20 @@
-const { cube, union } = require('@dotcore64/scad-js');
+const { union, hull } = require('@dotcore64/scad-js');
+const post = require('./switch_post.js');
 
-const full_frame = ( { x, y, z, t } ) => {
+const switch_frame = (size) => {
 
-  const front = cube([x, t, z]).translate([0, t / 2 + y / 2, z / 2]);
-  const left = cube([t, x, z]).translate([t / 2 + x / 2, 0, z / 2]);
+  const sPost = post(size);
 
-  const half = union(front, left);
+  const right = hull(sPost('top', 'right'), sPost('bottom', 'right'));
+  const left = hull(sPost('top', 'left'), sPost('bottom', 'left'));
+  const top = hull(sPost('top', 'right'), sPost('top', 'left'));
+  const bottom = hull(sPost('bottom', 'right'), sPost('bottom', 'left'));
 
   return union(
-    half.mirror([1, 0, 0]),
-    half.mirror([0, 1, 0])
+    top,bottom,
+    left,
+    right,
   );
 }
 
-module.exports = full_frame;
+module.exports = switch_frame;
