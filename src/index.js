@@ -1,3 +1,6 @@
 const S = require('@dotcore64/scad-js');
+const { frame_sizes } = require('./config.js');
 
-console.log(S.cube().serialize());
+const switch_frame = require('./switch_frame.js');
+
+console.log(switch_frame(frame_sizes).serialize());
