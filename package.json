@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "openscad dist/output.scad & nodemon --watch src --exec 'node src/index.js > dist/output.scad'"
+  },
+  "dependencies": {
+    "@dotcore64/scad-js": "^0.0.5",
+    "nodemon": "^2.0.4"
+  },
+  "name": "scad-js-starter",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:20lives/scad-js-starter.git",
+  "license": "MIT"
+}
