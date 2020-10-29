@@ -6,4 +6,4 @@ module.exports = ({x, y, z, t}) => (tb, rl) => {
     (y + t) / 2 * (tb == 'top' ? 1 : -1),
     0,
   ]);
-}
+};

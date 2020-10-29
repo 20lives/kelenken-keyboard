@@ -1,7 +1,7 @@
 const { union, hull } = require('@dotcore64/scad-js');
 const post = require('./switch_post.js');
 
-const switch_frame = (size) => {
+const SwitchFrame = (size) => {
 
   const sPost = post(size);
 
@@ -11,10 +11,11 @@ const switch_frame = (size) => {
   const bottom = hull(sPost('bottom', 'right'), sPost('bottom', 'left'));
 
   return union(
-    top,bottom,
+    top,
+    bottom,
     left,
     right,
   );
-}
+};
 
-module.exports = switch_frame;
+module.exports = SwitchFrame;
