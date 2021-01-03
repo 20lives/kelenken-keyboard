@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { union } = require('@dotcore64/scad-js');
+const { union } = require('scad-js');
 
 const { 
   main_cluster_structure,

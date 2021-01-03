@@ -1,4 +1,4 @@
-const { union } = require('@dotcore64/scad-js');
+const { union } = require('scad-js');
 const { thumb_cluster_structure, switch_frame_config, thumb_cluster_position } = require('./config.js');
 
 const Place = require('./place.js');

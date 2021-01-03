@@ -1,4 +1,4 @@
-const { union, hull } = require('@dotcore64/scad-js');
+const { union, hull } = require('scad-js');
 const post = require('./switch_post.js');
 
 const SwitchFrame = (size) => {

@@ -1,4 +1,4 @@
-const { hull } = require('@dotcore64/scad-js');
+const { hull } = require('scad-js');
 const Post = require('./switch_post.js');
 const Place = require('./place.js');
 

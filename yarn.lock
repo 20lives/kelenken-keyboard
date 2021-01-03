@@ -23,13 +23,6 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dotcore64/scad-js@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@dotcore64/scad-js/-/scad-js-0.1.0.tgz#dd7d3b45d7e18cdafae9f1e745ba4dd46155f33d"
-  integrity sha512-SiatTjLO5WyYOr15MkFauEEKP0Lzi8tXYEBv9obZQzGXAfvBvfMVD3W9Q5DSp0cnCHvqehg0nLHW4SBRwdQH+A==
-  dependencies:
-    eslint "^7.11.0"
-
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.1.tgz#f72069c330461a06684d119384435e12a5d76e3c"
@@ -457,7 +450,7 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
-eslint@^7.11.0, eslint@^7.12.1:
+eslint@^7.12.1:
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.12.1.tgz#bd9a81fa67a6cfd51656cdb88812ce49ccec5801"
   integrity sha512-HlMTEdr/LicJfN08LB3nM1rRYliDXOmfoO4vj39xN6BLpFzF00hbwBoqHk8UcJ2M/3nlARZWy/mslvGEuZFvsg==
@@ -1055,11 +1048,6 @@ pupa@^2.0.1:
   dependencies:
     escape-goat "^2.0.0"
 
-ramda@^0.27.1:
-  version "0.27.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
-  integrity sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
-
 rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -1114,6 +1102,11 @@ rimraf@2.6.3:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+scad-js@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/scad-js/-/scad-js-0.2.3.tgz#283f1e6dab0d56fde3d0758e87d2a8d04ac10089"
+  integrity sha512-4OuKHoeWfpDbhH3jH/dpaw5V17Lfky2FfGFO+HF+t1U1NHAsgmmzJu+waixsRq15VV/Ezpiw3B+N82vS8VnrwA==
 
 semver-diff@^3.1.1:
   version "3.1.1"

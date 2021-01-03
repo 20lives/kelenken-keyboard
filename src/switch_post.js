@@ -1,4 +1,4 @@
-const { cube } = require('@dotcore64/scad-js');
+const { cube } = require('scad-js');
 
 module.exports = ({x, y, z, t}) => (tb, rl) => {
   return cube([t, t, z]).translate([

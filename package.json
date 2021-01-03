@@ -9,8 +9,8 @@
   "repository": "git@github.com:20lives/scad-js-starter.git",
   "license": "MIT",
   "dependencies": {
-    "@dotcore64/scad-js": "^0.1.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "scad-js": "^0.2.3"
   },
   "devDependencies": {
     "eslint": "^7.12.1"

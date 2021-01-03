@@ -1,4 +1,4 @@
-const { union } = require('@dotcore64/scad-js');
+const { union } = require('scad-js');
 
 const {
   thumb_cluster_structure,
