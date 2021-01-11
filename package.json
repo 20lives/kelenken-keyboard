@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "nodemon": "^2.0.4",
-    "scad-js": "^0.2.3"
+    "scad-js": "^0.4.0"
   },
   "devDependencies": {
     "eslint": "^7.12.1"

@@ -7,7 +7,7 @@ const main_cluster_structure = [
 ];
 
 const main_cluster_position = {
-  translate: [0, 0, 60],
+  translate: [10, 0, 60],
   rotate: [0, 10, 0],
 };
 

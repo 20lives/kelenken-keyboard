@@ -1,14 +1,6 @@
-const { union, hull } = require('scad-js');
+const { union, hull, chain_hull } = require('scad-js');
 const Post = require('./switch_post.js');
 const Place = require('./place.js');
-
-const pairsHull = (...items) => {
-  const res = [];
-  for (let i = 0; i < items.length - 1; i++) {
-    res.push(hull(items[i], items[i + 1]));
-  }
-  return union(...res);
-};
 
 const projectExtrude = obj => hull(obj, obj.projection().linear_extrude(1));
 
@@ -39,8 +31,8 @@ const walls = (switch_size, walls_size, structure, position) => {
     ));
 
     return union(
-      pairsHull(...arr3),
-      pairsHull(...arr2),
+      chain_hull(...arr3),
+      chain_hull(...arr2),
     );
   };
 
@@ -73,8 +65,8 @@ const walls = (switch_size, walls_size, structure, position) => {
     ));
 
     return union(
-      pairsHull(...arr3),
-      pairsHull(...arr2),
+      chain_hull(...arr3),
+      chain_hull(...arr2),
     );
   };
 
